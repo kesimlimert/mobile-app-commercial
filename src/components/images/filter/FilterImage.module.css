@@ -1,0 +1,96 @@
+.image {
+  width: 100%;
+  animation: slideInFromBottom 0.8s linear forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imageWrap {
+  position: relative;
+
+  width: 100%;
+  max-width: 230px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+.rightBar {
+  position: absolute;
+  top: 18%;
+  right: -4%;
+
+  width: 100%;
+  max-width: 28px;
+  height: 240px;
+
+  opacity: 0;
+
+  animation: fadeIn 0.8s linear 1.6s forwards;
+}
+
+.leftBar {
+  position: absolute;
+  top: 18%;
+  left: -5%;
+
+  width: 100%;
+  max-width: 28px;
+  height: 240px;
+
+  opacity: 0;
+
+  animation: fadeIn 0.8s linear 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (width >= 600px) {
+  .imageWrap {
+    max-width: 365px;
+  }
+
+  .leftBar {
+    max-width: 42px;
+    height: 360px;
+  }
+
+  .rightBar {
+    max-width: 42px;
+    height: 360px;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 945px) {
+  .leftBar {
+    top: 16%;
+    max-width: 28px;
+    height: 240px;
+  }
+
+  .rightBar {
+    top: 16%;
+    max-width: 28px;
+    height: 240px;
+  }
+}

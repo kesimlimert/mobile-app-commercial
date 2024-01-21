@@ -1,0 +1,95 @@
+.content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.textBlock {
+  text-align: center;
+}
+
+.textBlock h2 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.09px;
+  color: rgb(3 129 255 / 100%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.textBlock h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: rgb(11 18 42 / 100%);
+}
+
+.textBlock p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: rgb(11 23 42 / 100%);
+}
+
+.textBlock button {
+  padding: 16px;
+
+  font-size: 15px;
+  color: rgb(11 18 42 / 100%);
+
+  background-color: white;
+  border: 1px solid rgb(0 0 0 / 16%);
+}
+
+@media only screen and (width >= 600px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 556px;
+    padding-left: 128px;
+
+    text-align: right;
+  }
+
+  .textBlock p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .textBlock button {
+    max-width: 135px;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 800px) {
+  .textBlock {
+    padding-left: 64px;
+  }
+
+  .textBlock p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .content {
+    max-width: 600px !important;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 1300px) {
+  .content {
+    max-width: 1000px;
+  }
+}

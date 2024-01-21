@@ -1,0 +1,191 @@
+.image {
+  width: 100%;
+  animation: slideInFromBottom 0.8s linear forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottomTxt {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    left: 65%;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottomPdf {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    left: -15%;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imageWrap {
+  position: relative;
+
+  width: 100%;
+  max-width: 230px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+.vector {
+  width: 100%;
+  max-width: 15px;
+}
+
+.jpg {
+  position: absolute;
+  top: 56%;
+  left: 30%;
+
+  width: 100%;
+  max-width: 85px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.8s linear 1.6s forwards;
+}
+
+.txt {
+  position: absolute;
+  top: 59%;
+  left: 37%;
+
+  width: 100%;
+  max-width: 100px;
+
+  opacity: 0;
+
+  animation: slideInFromBottomTxt 0.8s linear 2.4s forwards;
+}
+
+.pdf {
+  width: 100%;
+  max-width: 100px;
+}
+
+.box {
+  position: absolute;
+  top: 60%;
+  left: 37%;
+
+  opacity: 0;
+
+  animation: slideInFromBottomPdf 0.8s linear 0.8s forwards;
+}
+
+@media only screen and (width >= 600px) {
+  .imageWrap {
+    max-width: 365px;
+  }
+
+  .pdf {
+    top: 60%;
+    max-width: 155px;
+  }
+
+  .txt {
+    top: 60%;
+    max-width: 155px;
+  }
+
+  .jpg {
+    top: 57%;
+    left: 31%;
+    max-width: 130px;
+  }
+
+  .vector {
+    max-width: 24px;
+  }
+
+  @keyframes slideInFromBottomPdf {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      left: -13%;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (width >= 950px) and (width <= 1300px) {
+  .pdf {
+    top: 60%;
+    max-width: 125px;
+  }
+
+  .txt {
+    top: 60%;
+    max-width: 125px;
+  }
+
+  .jpg {
+    top: 57%;
+    left: 31%;
+    max-width: 105px;
+  }
+
+  .vector {
+    max-width: 24px;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 949px) {
+  .pdf {
+    top: 60%;
+    max-width: 100px;
+  }
+
+  .txt {
+    top: 59%;
+    max-width: 100px;
+  }
+
+  .jpg {
+    top: 56%;
+    left: 30%;
+    max-width: 85px;
+  }
+
+  .vector {
+    max-width: 15px;
+  }
+
+  @keyframes slideInFromBottomPdf {
+    0% {
+      transform: translateY(100%);
+    }
+
+    100% {
+      left: -15%;
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

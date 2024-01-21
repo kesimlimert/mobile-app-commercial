@@ -1,0 +1,46 @@
+.main {
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  padding: 64px 24px 0;
+}
+
+.tabs {
+  overflow: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.tab {
+  z-index: 99;
+
+  display: flex;
+  flex-grow: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 321px;
+  height: 124px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(0 0 0 / 100%);
+
+  background-color: rgb(255 255 255 / 100%);
+  border: none;
+  border-right: 1px solid rgb(0 0 0 / 8%);
+}
+
+.tab:hover {
+  border: 2px solid rgb(3 129 255 / 100%);
+}
+
+.active {
+  background-color: #f7fbff;
+}

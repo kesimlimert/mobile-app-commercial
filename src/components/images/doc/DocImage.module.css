@@ -1,0 +1,30 @@
+.image {
+  width: 100%;
+  animation: slideInFromBottom 0.8s linear forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.imageWrap {
+  width: 100%;
+  max-width: 230px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+@media only screen and (width >= 600px) {
+  .imageWrap {
+    max-width: 365px;
+  }
+}

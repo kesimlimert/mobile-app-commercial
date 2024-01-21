@@ -1,0 +1,113 @@
+.image {
+  width: 100%;
+  animation: slideInFromBottom 0.8s linear forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imageWrap {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+}
+
+.front {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+
+  width: 100%;
+  max-width: 192px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s linear 2.6s forwards;
+}
+
+.middle {
+  position: absolute;
+  top: 26%;
+  left: 11%;
+
+  width: 100%;
+  max-width: 182px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s linear 1.8s forwards;
+}
+
+.back {
+  position: absolute;
+  top: 24%;
+  left: 14%;
+
+  width: 100%;
+  max-width: 165px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s linear 1s forwards;
+}
+
+@media only screen and (width >= 600px) {
+  .imageWrap {
+    max-width: 365px;
+  }
+
+  .front {
+    top: 29%;
+    left: 5%;
+    max-width: 290px;
+  }
+
+  .middle {
+    top: 24%;
+    left: 8%;
+    max-width: 273px;
+  }
+
+  .back {
+    top: 22%;
+    left: 12%;
+    max-width: 247px;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 945px) {
+  .front {
+    top: 30%;
+    left: 5%;
+    width: 100%;
+    max-width: 182px;
+  }
+
+  .middle {
+    top: 26%;
+    left: 9%;
+    width: 100%;
+    max-width: 172px;
+  }
+
+  .back {
+    top: 24%;
+    left: 12%;
+    width: 100%;
+    max-width: 155px;
+  }
+}
